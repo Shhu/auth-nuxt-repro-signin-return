@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { signIn, signOut, session, status, cookies } = useAuth()
 
-const res = ref()
+const res = ref() 
 
 async function signInWithoutRedirect() {
   res.value = await signIn('credentials', { redirect: false })
